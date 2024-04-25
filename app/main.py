@@ -6,6 +6,7 @@ from app.routers.post import router as post_router
 from app.routers.comment import router as comment_router
 from app.routers.follower import router as follower_router
 from app.routers.chat import router as chat_router
+from app.routers.files import router as files_router
 
 app = FastAPI()
 
@@ -21,4 +22,5 @@ app.include_router(post_router)
 app.include_router(comment_router)
 app.include_router(follower_router)
 app.include_router(chat_router)
+app.include_router(files_router)
 
